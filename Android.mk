@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libjson
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
+LOCAL_CFLAGS := -Werror -Wno-error=unused-parameter
 LOCAL_SRC_FILES := arraylist.c \
 		debug.c \
 		json_c_version.c \
